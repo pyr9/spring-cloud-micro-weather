@@ -1,0 +1,11 @@
+rootProject.name = 'spring-cloud-micro-weather'
+include 'micro-weather-config-client'
+include 'micro-weather-config-server'
+include 'micro-weather-consul'
+include 'micro-weather-eureka-client-feign-hystrix'
+include 'micro-weather-eureka-client-gateway'
+include 'micro-weather-eureka-client-ribbon'
+include 'micro-weather-zookeeper'
+include 'micro-weather-eureka-server'
+include 'micro-weather-city-eureka'
+

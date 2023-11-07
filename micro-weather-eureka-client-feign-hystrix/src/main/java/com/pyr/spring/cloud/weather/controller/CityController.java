@@ -1,6 +1,5 @@
 package com.pyr.spring.cloud.weather.controller;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.pyr.spring.cloud.weather.service.CityClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +12,13 @@ public class CityController {
 
   @RequestMapping("/cities")
 //  @HystrixCommand(fallbackMethod="defaultCities")
-  public String listCity(){
+  public String listCity() {
     return cityClient.listCity();
+  }
+
+  @RequestMapping("/teachers")
+  public String listTeacher() {
+    return cityClient.listTeacher();
   }
 
 //  public String defaultCities(){
