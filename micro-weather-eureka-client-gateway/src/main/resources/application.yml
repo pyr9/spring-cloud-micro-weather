@@ -2,7 +2,7 @@ server:
   port: 9090
 spring:
   application:
-    name: micro-weather-eureka-client-gateway
+    name: micro-weather-gateway
   cloud:
     gateway: #网关路由配置
       discovery:
